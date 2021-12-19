@@ -1,0 +1,11 @@
+.search{
+    background: #fafafa;
+    box-shadow: 0px 0px 3px 1px rgba(0,0,0,0.2);
+}
+
+.search input{
+    border: none;
+    outline: transparent;
+    border-bottom: 1px solid #000;
+    padding: 4px;
+}
