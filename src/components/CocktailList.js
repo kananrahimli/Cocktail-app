@@ -4,17 +4,16 @@ import CocktailItem from './CocktailItem'
 
 export default function CocktailList() {
     const {cocktails,loading}=useGolbalContext()
+
     if(loading){
         return(
             <h1 className="text-center my-5">LOADING...</h1>
         )
     }
 
-    if(cocktails.length<0){
+    if(cocktails.length<1){
         return (
-            <div className='home container py-5 d-flex flex-column align-items-center'>
-            Not Found Cocktails
-        </div>
+            <h1>Not found</h1>
         )
     }
     return (
